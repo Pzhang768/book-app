@@ -19,7 +19,7 @@ jobs:
       - name: Setup Dependencies
         uses: actions/setup-dotnet@v4
         with:
-              dotnet-version:${{env.DOTNET_VERSION}}
+              dotnet-version: ${{env.DOTNET_VERSION}}
 
       - name: Restore Package
         run: dotnet restore
